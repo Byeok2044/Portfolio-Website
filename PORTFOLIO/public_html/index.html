@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 id="typingText" class="neon-text light-mode-text"></h1>
+    <button id="themeToggle">Toggle Light Mode</button>
+  </header>
+
+  <div id="particles-js"></div> <!-- Particle animation declaration -->
+  
+  <!-- Project, Skills, and Contact Section -->
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul id="projectList"></ul>
+  </section>
+  
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul id="skillList"></ul>
+  </section>
+
+  <!-- Back to Top Button -->
+
+  <button id="backToTop">⬆</button>
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+    <div id="social-media">
+      <h3>Follow Me</h3>
+      <a href="https://github.com/Rei0133" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank">LinkedIn</a> |
+      <a href="https://www.instagram.com/rei.0133/" target="_blank">Instagram</a>
+    </div>
+    <div class="scroll-down"></div>
+
+     <!-- Social Media Sidebar -->
+
+    <div class="social-sidebar">
+      <a href="https://www.facebook.com/reynaldojoseph.chee.1" class="social-icon">
+          <img src="fb.jpg" alt="FB">
+      </a>
+      <a href="https://www.youtube.com/@rei.0133" class="social-icon">
+          <img src="yt.png" alt="YT">
+      </a>
+      <a href="https://www.tiktok.com/@rei.00133?_t=ZS-8uEuKvooJUK&_r=1" class="social-icon">
+          <img src="tiktok.jpg" alt="TK">
+      </a>
+
+      <!-- Automated Date at Footer -->
+
+  </div>
+    <script>
+      var currentDate = new Date();
+      var month = currentDate.getMonth() + 1; 
+      var day = currentDate.getDate();
+      var year = currentDate.getFullYear();
+      var fullDate = month + "/" + day + "/" + year;
+      document.write(fullDate);
+    </script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header that includes the script for the Particle animation and Title -->
+
+<head>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+  <header>
+    <h1 id="typingText" class="neon-text light-mode-text"></h1> <!-- Neon Text and Typing Animation -->
+    <button id="themeToggle">Toggle Light Mode</button> <!-- Toggle Theme Button -->
+  </header>
+
+  <div id="particles-js"></div> <!-- Particle animation declaration -->
+
+
+    
+
+
+       <!--Contact Form-->
+    <div id="contact-form">
+      
+      <section id="contact">
+        
+        
+        
+        <form action="send_message.php" method="post" id="contactForm">
+
+          <label for="name">NAME:</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">EMAIL:</label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="message">MESSAGE:</label>
+          <textarea id="message" name="message" required></textarea>
+        
+          <button type="submit">SEND</button>
+          
+        </form>
+        
+        
+        <p id="formMessage"></p>
+        
+       <button id="backToTop">⬆</button>
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+    <div id="social-media">
+      <h3>Follow Me</h3>
+      <a href="https://github.com/Rei0133" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank">LinkedIn</a> |
+      <a href="https://www.instagram.com/rei.0133/" target="_blank">Instagram</a>
+    </div>
+    <div class="scroll-down"></div>
+
+      <!-- Automated Date at Footer -->
+
+
+    <script>
+      var currentDate = new Date();
+      var month = currentDate.getMonth() + 1; 
+      var day = currentDate.getDate();
+      var year = currentDate.getFullYear();
+      var fullDate = month + "/" + day + "/" + year;
+      document.write(fullDate);
+    </script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
