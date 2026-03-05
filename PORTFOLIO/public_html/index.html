@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio — Reynaldo Chee</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,56 +19,65 @@
   </nav>
 
   <header>
-    <h1 id="typingText" class="neon-text light-mode-text"></h1>
+    <div class="header-eyebrow">// PORTFOLIO</div>
+    <h1 id="typingText" class="neon-text"></h1>
+    <p class="header-subtitle">IT Undergraduate &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Innovator</p>
+    <div class="header-cta">
+      <a href="about.html" class="cta-btn cta-primary">View Profile</a>
+      <a href="contact.html" class="cta-btn cta-secondary">Get In Touch</a>
+    </div>
     <button id="themeToggle">Toggle Light Mode</button>
   </header>
 
-  <div id="particles-js"></div> 
+  <div id="particles-js"></div>
 
   <section id="projects">
     <h2>Projects</h2>
     <ul id="projectList"></ul>
   </section>
-  
+
   <section id="skills">
     <h2>Technical Skills</h2>
     <ul id="skillList"></ul>
   </section>
 
+  <button id="backToTop" title="Back to top">⬆</button>
 
-  <button id="backToTop">⬆</button>
   <footer>
-    <p>&copy; 2025 My Portfolio</p>
+    <p>&copy; 2025 Reynaldo Joseph D. Chee</p>
     <div id="social-media">
       <h3>Follow Me</h3>
-      <a href="https://github.com/Rei0133" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank">LinkedIn</a> |
-      <a href="https://www.instagram.com/rei.0133/" target="_blank">Instagram</a>
+      <a href="https://github.com/Rei0133" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="https://www.instagram.com/rei.0133/" target="_blank" rel="noopener">Instagram</a>
     </div>
+    <div class="footer-date" id="footerDate"></div>
     <div class="scroll-down"></div>
-
-    <div class="social-sidebar">
-      <a href="https://www.facebook.com/reynaldojoseph.chee.1" class="social-icon">
-          <img src="fb.jpg" alt="FB">
-      </a>
-      <a href="https://www.youtube.com/@rei.0133" class="social-icon">
-          <img src="yt.png" alt="YT">
-      </a>
-      <a href="https://www.tiktok.com/@rei.00133?_t=ZS-8uEuKvooJUK&_r=1" class="social-icon">
-          <img src="tiktok.jpg" alt="TK">
-      </a>
-
-  </div>
-    <script>
-      var currentDate = new Date();
-      var month = currentDate.getMonth() + 1; 
-      var day = currentDate.getDate();
-      var year = currentDate.getFullYear();
-      var fullDate = month + "/" + day + "/" + year;
-      document.write(fullDate);
-    </script>
   </footer>
 
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/reynaldojoseph.chee.1" class="social-icon" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="fb.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@rei.0133" class="social-icon" target="_blank" rel="noopener" aria-label="YouTube">
+      <img src="yt.png" alt="YouTube">
+    </a>
+    <a href="https://www.tiktok.com/@rei.00133" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">
+      <img src="tiktok.jpg" alt="TikTok">
+    </a>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    const d = new Date();
+    document.getElementById('footerDate').textContent =
+      (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear();
+
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>

@@ -1,111 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>About Me — Reynaldo Chee</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1 id="typingText" class="neon-text light-mode-text"></h1> 
-    <button id="themeToggle">Toggle Light Mode</button> 
+    <h1 id="typingText" class="neon-text"></h1>
+    <button id="themeToggle">Toggle Light Mode</button>
   </header>
 
-  <div id="particles-js"></div> 
+  <div id="particles-js"></div>
+
   <section id="about">
     <h2>About Me</h2>
 
- 
-
     <div class="about-container">
+      <!-- Left: Details -->
       <div class="about-details">
+
         <h3>Personal Information</h3>
-        <p><strong>Name:</strong> Reynaldo Joseph D. Chee</p>
-        <p><strong>Email:</strong> reychee06@gmail.com</p>
-        <p><strong>Phone:</strong> +639664039769</p>
-        <p><strong>Location:</strong> Manila, Philippines</p>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Name</span>
+            <span class="info-value">Reynaldo Joseph D. Chee</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span class="info-value">
+              <a href="mailto:reychee06@gmail.com">reychee06@gmail.com</a>
+            </span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone</span>
+            <span class="info-value">+63 966 403 9769</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Manila, Philippines</span>
+          </div>
+        </div>
 
         <h3>Professional Summary</h3>
-        <p>I am an Information Technology undergraduate with a strong foundation in software development, system architecture, and emerging technologies. My expertise includes programming, cloud computing, and machine learning, with experience in game development and software engineering. Passionate about innovation, I aim to design scalable, efficient, and impactful solutions in the field of technology.</p>
+        <p>
+          I am an Information Technology undergraduate with a strong foundation in software development,
+          system architecture, and emerging technologies. My expertise includes programming, cloud computing,
+          and machine learning, with experience in game development and software engineering. Passionate about
+          innovation, I aim to design scalable, efficient, and impactful solutions in the field of technology.
+        </p>
 
         <h3>Education</h3>
-        <p><strong>Bachelor of Science in Information Technology</strong></p>
-        <p>Pamantasan ng Lungsod ng Maynila – Present</p>
+        <div class="edu-block">
+          <div class="edu-degree">Bachelor of Science in Information Technology</div>
+          <div class="edu-school">Pamantasan ng Lungsod ng Maynila</div>
+          <div class="edu-status">
+            <span class="status-badge">● Currently Enrolled</span>
+          </div>
+        </div>
+
       </div>
 
-
+      <!-- Right: Profile + Skills -->
       <div class="profile-container">
-        <img src="Chee.jpg" alt="Reynaldo Chee" class="profile-pic">
-        
+        <div class="profile-pic-wrapper">
+          <img src="Chee.jpg" alt="Reynaldo Chee" class="profile-pic">
+          <div class="profile-ring"></div>
+        </div>
+        <div class="profile-name">REY CHEE</div>
+        <div class="profile-title">IT Undergraduate · Developer</div>
+
         <h3>Skills</h3>
         <div class="skill">
-          <p>C++</p>
+          <div class="skill-header">
+            <p>C++</p><span class="skill-pct">80%</span>
+          </div>
           <div class="skill-bar"><div class="skill-fill c"></div></div>
         </div>
         <div class="skill">
-          <p>Python</p>
+          <div class="skill-header">
+            <p>Python</p><span class="skill-pct">85%</span>
+          </div>
           <div class="skill-bar"><div class="skill-fill python"></div></div>
         </div>
         <div class="skill">
-          <p>JavaScript</p>
+          <div class="skill-header">
+            <p>JavaScript</p><span class="skill-pct">75%</span>
+          </div>
           <div class="skill-bar"><div class="skill-fill javascript"></div></div>
         </div>
         <div class="skill">
-          <p>Cloud Computing</p>
+          <div class="skill-header">
+            <p>Cloud Computing</p><span class="skill-pct">70%</span>
+          </div>
           <div class="skill-bar"><div class="skill-fill cloud"></div></div>
         </div>
       </div>
-    </div> 
+    </div>
   </section>
 
+  <button id="backToTop" title="Back to top">⬆</button>
 
-  <button id="backToTop">⬆</button>
   <footer>
-    <p>&copy; 2025 My Portfolio</p>
+    <p>&copy; 2025 Reynaldo Joseph D. Chee</p>
     <div id="social-media">
       <h3>Follow Me</h3>
-      <a href="https://github.com/Rei0133" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank">LinkedIn</a> |
-      <a href="https://www.instagram.com/rei.0133/" target="_blank">Instagram</a>
+      <a href="https://github.com/Rei0133" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/reynaldo-chee-111077353/" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="https://www.instagram.com/rei.0133/" target="_blank" rel="noopener">Instagram</a>
     </div>
+    <div class="footer-date" id="footerDate"></div>
     <div class="scroll-down"></div>
-
-
-    <div class="social-sidebar">
-      <a href="https://www.facebook.com/reynaldojoseph.chee.1" class="social-icon">
-          <img src="fb.jpg" alt="FB">
-      </a>
-      <a href="https://www.tiktok.com/@rei.00133?_t=ZS-8uEuKvooJUK&_r=1" class="social-icon">
-          <img src="yt.png" alt="TK">
-      </a>
-      <a href="https://www.youtube.com/@rei.0133" class="social-icon">
-          <img src="tiktok.jpg" alt="YT">
-      </a>
-
-  </div>
-    <script>
-      var currentDate = new Date();
-      var month = currentDate.getMonth() + 1; 
-      var day = currentDate.getDate();
-      var year = currentDate.getFullYear();
-      var fullDate = month + "/" + day + "/" + year;
-      document.write(fullDate);
-    </script>
   </footer>
 
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/reynaldojoseph.chee.1" class="social-icon" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="fb.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@rei.0133" class="social-icon" target="_blank" rel="noopener" aria-label="YouTube">
+      <img src="yt.png" alt="YouTube">
+    </a>
+    <a href="https://www.tiktok.com/@rei.00133" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">
+      <img src="tiktok.jpg" alt="TikTok">
+    </a>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    const d = new Date();
+    document.getElementById('footerDate').textContent =
+      (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear();
+
+    // Back to top visibility
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>
